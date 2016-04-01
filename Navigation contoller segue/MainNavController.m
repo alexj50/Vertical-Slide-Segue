@@ -11,7 +11,6 @@
 @implementation MainNavController
 
 - (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem *)item {
-    
     if([self.viewControllers count] < [navigationBar.items count]) {            // reset nav bar when its the parent view
         return YES;
     }

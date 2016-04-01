@@ -10,7 +10,7 @@
 
 @implementation RowInfo
 
--(id)copy {
+-(id)copy {                                                                     // copy class object
     RowInfo *info    = [RowInfo new];
     info.options     = _options;
     info.selected    = _selected;
@@ -19,7 +19,7 @@
     return info;
 }
 
--(NSString *)description{
+-(NSString *)description{                                                       // privide the debugger output
     return [NSString stringWithFormat:@"Options count: %ld\nSelected Text: %@\nIndex Path.row: %@\nSelected Row: %ld", _options.count,_selected, _indexPath, _selectedRow];
 }
 @end
